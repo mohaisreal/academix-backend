@@ -224,6 +224,11 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 
+# CSRF Configuration
+CSRF_TRUSTED_ORIGINS = [
+    'https://academix-backend-production.up.railway.app',
+]
+
 # Stripe Configuration
 STRIPE_PUBLISHABLE_KEY = os.environ.get('STRIPE_PUBLIC_KEY', 'pk_test_YOUR_PUBLISHABLE_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', 'sk_test_YOUR_SECRET_KEY')
